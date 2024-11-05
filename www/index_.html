@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sostenible App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div id="app">
+    <h1>Sostenible App</h1>
+    <!-- Aquí irán las funcionalidades clave -->
+    <div id="perfil">
+        <h2>Perfil Personal</h2>
+        <form id="perfil-form">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" placeholder="Escribe tu nombre">
+            <label for="objetivos">Objetivos Sostenibles:</label>
+            <textarea id="objetivos" placeholder="Describe tus objetivos"></textarea>
+            <button type="button" onclick="guardarPerfil()">Guardar</button>
+        </form>
+
+        <div id="consejos">
+            <h2>Consejos Sostenibles</h2>
+            <p id="consejo"></p>
+            <button type="button" onclick="mostrarConsejo()">Obtener consejo</button>
+        </div>
+
+        <div id="calculadora">
+            <h2>Calculadora de Impacto</h2>
+            <label for="acciones">Número de acciones sostenibles:</label>
+            <input type="number" id="acciones" placeholder="0">
+            <button type="button" onclick="calcularImpacto()">Calcular Impacto</button>
+            <p id="resultado-impacto"></p>
+        </div>
+        
+        <div id="recursos">
+            <h2>Recursos Educativos</h2>
+            <ul>
+              <li><a href="https://example.com/recurso1" target="_blank">Cómo reciclar correctamente</a></li>
+              <li><a href="https://example.com/recurso2" target="_blank">Ahorro de energía en el hogar</a></li>
+            </ul>
+        </div>
+
+        <div id="registro">
+            <h2>Registro de Actividades</h2>
+            <form id="registro-form">
+              <label for="actividad">Actividad:</label>
+              <input type="text" id="actividad" placeholder="Escribe tu actividad sostenible">
+              <button type="button" onclick="registrarActividad()">Registrar</button>
+            </form>
+            <ul id="lista-actividades"></ul>
+        </div>
+   
+        
+    </div>
+  </div>
+  <script src="cordova.js"></script>
+  <script src="js/index.js"></script>
+</body>
+</html>
